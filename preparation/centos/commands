@@ -8,5 +8,5 @@ cd ./POLKA/preparation/centos/
 cd ./python && sh ./install_python_stable.sh && cd ../
 cd ./db && sh ./install_mariadb_stable.sh && cd ../
 
-pip3 install -U -r ./requirements/vk_api_stable.txt
-pip3 install -U -r ./requirements/database_stable.txt
+pip3 install -U -r ./python/requirements/vk_api_stable.txt
+pip3 install -U -r ./python/requirements/database_stable.txt
