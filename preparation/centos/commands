@@ -1,0 +1,12 @@
+yum -y install git
+git clone https://github.com/6a16ec/POLKA.git
+yum -y remove git
+yum clean all
+
+cd ./POLKA/preparation/centos/
+
+sh ./python/install_python_stable.sh
+sh ./db/install_mariadb_stable.sh
+
+pip3 install -U -r ./requirements/vk_api_stable.txt
+pip3 install -U -r ./requirements/database_stable.txt
