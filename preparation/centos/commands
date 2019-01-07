@@ -5,7 +5,7 @@ yum clean all
 
 cd ./POLKA/preparation/centos/
 
-cd ./python && sh ./python/install_python_stable.sh && cd ../
+cd ./python && sh ./install_python_stable.sh && cd ../
 cd ./db && sh ./install_mariadb_stable.sh && cd ../
 
 pip3 install -U -r ./requirements/vk_api_stable.txt
